@@ -1,0 +1,7 @@
+Q4.serached for the the pattern using "/34.66" and then deleted the whole line using "dd".
+Q7. :%s/SRT/SRS/g
+Q10. :%s/cat/tiger/g
+Q12. First used "shift+g" to go to the bottom of the file and then using ":70" jumped back to the 70th line
+Q13. wrote the line at the end of the file then using ":%s/(who was very quick)/ /g" removed this sentence.
+
+
