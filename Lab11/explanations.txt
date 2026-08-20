@@ -1,0 +1,3 @@
+1.In the newdir example ,using 1> the standard output went to the presentfile not the error but using 2> only the error was shown in the filesnotpresent not the output
+4.At first when we used only ">" symbol the bash interpreted it as the redirection to the new file name Nagesh but now using "\>" it only does the greater than operation.
+5. The octadecimal number for t is more than T
