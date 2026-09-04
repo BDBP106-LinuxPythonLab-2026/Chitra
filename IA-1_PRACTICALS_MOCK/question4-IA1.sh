@@ -1,0 +1,7 @@
+#!/bin/bash
+awk '{print $1,$2}' numbers.txt
+
+
+
+
+
