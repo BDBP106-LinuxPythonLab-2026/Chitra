@@ -1,0 +1,7 @@
+a=float(input("Enter a:"))
+b=float(input("Enter b:"))
+c=float(input("Enter c:"))
+x1=(-b + (b**2 - 4 * a*c)**0.5)/(2 * a)
+x2= (-b - (b**2 -4 * a *c)**0.5)/(2 * a)
+print(x1)
+print(x2)
