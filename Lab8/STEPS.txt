@@ -3,5 +3,15 @@ Q7. :%s/SRT/SRS/g
 Q10. :%s/cat/tiger/g
 Q12. First used "shift+g" to go to the bottom of the file and then using ":70" jumped back to the 70th line
 Q13. wrote the line at the end of the file then using ":%s/(who was very quick)/ /g" removed this sentence.
+Q15
+(ii):%s/ovr/over/g
+:%s/amaziing/amazing/g
+:7,7s/i/I/
+:%s/python is fun But also chalenging/Python is fun but also challenging/g
+
+
+
+
+
 
 

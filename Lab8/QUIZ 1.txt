@@ -1,0 +1,22 @@
+SECTION 1
+1.pwd
+2.Normally a file has "drwxrwxr-x" permissions which means owner and group has all the three permissions but everyone else has only permission to read and write .So after executing chmod command it changed to "drw-r--r--" which means write and execute permissions are removed from group and everyone else and execute permission is removed from the owner.
+3.>
+4.alias listall="ls -al"
+5.grep "Error" log.txt
+SECTION 2
+1.mkdir -p 2026/quizzes/august
+2.rmdir old_config
+3.chmod o+r deploy.sh && chmod o+w deploy.sh &&  chmod o+x deploy.sh
+chmod g+r deploy.sh && chmod g+x deploy.sh
+chmod e-r deploy.sh && chmod e-w deploy.sh && chmod e-x deploy.sh
+4.export PATH = "/home/ibab/opt/bin"
+5.alias search="grep -i"
+6.ls -a|sort -r 
+7.ls -a -sort -t |head -5
+8.This issue is due to owner not having permission to execute the file.So using chmod we will give all the permission to the owner and restrict the write and execute permission for the group and others.
+chmod o+x backup.sh && chmod g-w backup.sh && chmod g-x backup.sh
+chmod e-w backup.sh && chmod e-x backup.sh
+
+
+

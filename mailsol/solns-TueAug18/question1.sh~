@@ -1,0 +1,21 @@
+#!/bin/bash
+
+read -p "Enter the filename: " filename
+
+if [ -e "$filename" ]; then
+    echo "File exists."
+
+    if [ -r "$filename" ]; then
+        echo "The file is readable."
+    else
+        echo "The file is not readable."
+    fi
+
+    if [ -w "$filename" ]; then
+        echo "The file is writable."
+    else
+        echo "The file is not writable."
+    fi
+else
+    echo "File does not exist."
+fi

@@ -1,0 +1,54 @@
+14th aug
+1. You downloaded an application, and it created a hidden configuration file inside your home directory (~). You don't know the exact name, but you know the filename contains the word app. List all files in your home directory—including hidden ones—and filter the results to display only the files containing app in their name.
+
+2. Your machine is running low on space, and you suspect your ~/Downloads folder is full of massive setup files. List all files in ~/Downloads, show their sizes in a human-readable format (like MB or GB), and sort them so the largest files appear at the very bottom of your terminal for easy viewing. 
+
+
+1. ls -la ~ | grep "app"
+2. du -sh ~/Downloads/* | sort -h
+
+15th aug
+1.      You are running a script called run_backup.sh. You want to save all the error messages it generates into a file named errors.log so you can review them later, but you still want normal output to display on your screen. Run the script while redirecting only the standard error stream to a file.
+
+2.      You have a massive text file called database.txt. You need to find out if it contains an API key, but you don't know if the developer wrote it as api_key, API_KEY, or ApiKey. Search the file for the phrase "api_key" regardless of whether the letters are uppercase or lowercase, and print out the line numbers where matches are found.
+
+ 3.      You accidentally typed a sensitive password directly into the terminal command line. Because Linux saves your command history, anyone looking over your shoulder could press the "Up" arrow key and see it. Clear your current terminal session history completely and save that blank state so the password is gone forever.
+1. ./run_backup.sh 2> errors.log
+2. grep -in "api_key" database.txt
+3. history -c && history -w
+
+17th aug
+1.      Make a script executable for the owner
+
+2.      Remove write permissions from group and others for a script.
+
+3.      Give everyone read access.
+
+4.      You have an index.html file. You want the Owner to be able to read and write to it. You want Group users and everyone else (Others) to only be able to read it. No one should execute it. Figure out the 3-digit numeric code for this scenario and write out the command.
+
+5.      You wrote a script called deploy.sh. You want full control over it (Read, Write, and Execute). However, you want to block the Group and Others from seeing, editing, or running it entirely. Figure out the 3-digit numeric code for this scenario and write out the command.
+
+6.      You are sharing a tools script (tools.sh) with your team. The Owner (you) needs full control (Read, Write, Execute). The Group needs to read and execute it, but not edit it. Others should have zero access.  Figure out the 3-digit numeric code for this scenario and write out the command.
+
+1.      chmod u+x <script>
+
+2.      chmod og-w <script>
+
+3.      chmod a+r <script>
+
+4.      chmod 644 index.html
+
+5.      chmod 700 deploy.sh
+
+6.      chmod 750 tools.sh
+
+18th aug
+
+1. Write a shell script to  ask the user for a filename, and check if it exists. If it exists, is the file readable and writable.
+
+2. Write a script that counts the number of words, lines and characters in a given text file.
+
+3.  List the contents of the current directory and also the name and size of the largest file.
+
+sol in scripts
+
